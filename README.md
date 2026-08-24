@@ -1,5 +1,6 @@
 # Model Inversion Attack and Membership Inference Attack on the Yale Faces Dataset
 
+[Code](https://colab.research.google.com/drive/1PfzrrdE4TiiHtKjlOzTZql60zKZbVJeS?usp=sharing)
 
 This project studies privacy leakage in a face-recognition neural
 network trained on the **Yale Faces dataset**. The dataset contains 15
