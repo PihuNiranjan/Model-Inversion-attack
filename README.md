@@ -198,14 +198,9 @@ Predicted subject: subject01
 The graph reflects the boosting target confidence of the target class in the process of model inversion. From the initial randomly chosen picture, the confidence level is about 59%. The image undergoes modification by the gradient based optimizer and the change causes the confidence level of subject01 to increase quickly to around 100%, passing the 99% mark. After reaching a certain amount of iterations, the attack is stopped here at iteration 10 following the minimum-iteration condition in the implementation.
 
 ## Conclusion
-The key takeaway is that the attack generated random pixels and then gradually changed them until the network clearly preferred the chosen identity.
+The ultimately goal is that the attack generated random pixels and then gradually changed them until the network clearly preferred the chosen identity.
 
-This way the experiment is nothing but a form of basic model inversion.
-
-A major part of information that the network has about the target class is encoded in its learned representation so that an input can be designed (optimized) toward the class without having one of the training images of the class as part of the attack input.
-
-Even so, this particular set of results has no bearing in determining the accuracy of the original training picture.
-
+A major part of information that the network has about the target class is encoded in its learned representation so that an input can be optimized toward the class without having one of the training images of the class as part of the attack input. Even so, this particular set of results has no bearing in determining the accuracy of the original training picture.
 The recovered photograph is a model input that has been optimally adjusted for the wanted model output. It is likely that such an input may display distinguishable features of the target class but not in the form of an exact reproduction of a particular training example.
 
     
